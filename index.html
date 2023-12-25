@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    
+    Search: <input type="text" id="search-todos" placeholder="Search todo...">
+    <label>
+        <input id="hideCompleted" type="checkbox"> Hide Completed
+    </label>    
+    <select id="filterBy">
+        <option value="byEdited">sort by last edited</option>
+        <option value="byCreated">sort by recently created</option>
+        <option value="byAlphabetically">sort by by alphabetically</option>
+    </select>
+    
+    <div id="todos"></div>
+    <form action="" id="new-todo">
+        <input type="text" name="text" placeholder="Add new todo...">
+        <button>Add todo</button>
+    </form>
+
+    <script src="http://wzrd.in/standalone/uuid@latest"></script>
+    <script src="todo-function.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
